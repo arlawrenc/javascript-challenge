@@ -12,22 +12,15 @@
 
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>  
-  <script>
-      jQuery(document).ready(function () {
-          $("#divInputForm").hide();
-          //alert("load");
-          //pageLoad();
-      });
-  </script>
   <style>
-    .inputFormClass{
+    #divInputForm{
       position: absolute;
       left:100px;
       top:610px;
     }
   </style>
 </head>
-<body>
+<body onload="pageLoad();">
   <div class="wrapper">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -158,7 +151,7 @@
       </div>
     </div>
 
-    <div class="inputFormClass" id='divInputForm'>
+    <div  id='divInputForm'>
       <ul class="list-group" id="filters">
         <li class="filter list-group-item">
           <label for="date">Enter a Date</label>
